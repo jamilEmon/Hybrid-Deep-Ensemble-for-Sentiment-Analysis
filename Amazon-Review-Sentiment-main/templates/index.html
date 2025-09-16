@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>Amazon Review Sentiment</h1>
+        <form method="POST" action="/predict">
+            <textarea name="review_text" rows="5" cols="50" placeholder="Enter your review here...">{{ text }}</textarea><br><br>
+            <button type="submit" class="btn-gradient">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

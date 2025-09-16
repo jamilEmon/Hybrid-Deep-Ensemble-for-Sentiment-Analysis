@@ -1,0 +1,97 @@
+/* ===== Body & Background ===== */
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Card Styling ===== */
+.card {
+    background-color: #ffffff;
+    border-radius: 25px;
+    max-width: 700px;
+    width: 90%;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* ===== Headings ===== */
+.card h1, .card h2 {
+    background: linear-gradient(90deg, #6c63ff, #48a9fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== Textarea Styling ===== */
+textarea {
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+/* ===== Gradient Button ===== */
+.btn-gradient {
+    background: linear-gradient(90deg, #6c63ff, #48a9fe);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #48a9fe, #6c63ff);
+    transform: translateY(-3px);
+}
+
+/* ===== Prediction Result Box ===== */
+.result {
+    background: linear-gradient(to right, #f0f9ff, #e0f7fa);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.result ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result li {
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 5px 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.result li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== Sentiment Colors ===== */
+.sentiment-positive {
+    background-color: #4caf50;
+    color: white;
+}
+
+.sentiment-negative {
+    background-color: #f44336;
+    color: white;
+}

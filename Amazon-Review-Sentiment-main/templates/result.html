@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="card">
+        <h2>Input Text:</h2>
+        <p>{{ text }}</p>
+
+        <h2>Prediction Results:</h2>
+        <div class="result">
+            <ul>
+                {% for model, value in prediction.items() %}
+                    <li><strong>{{ model }}</strong>: <span class="sentiment">{{ value }}</span></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <br>
+        <a href="/" class="btn-gradient">Back</a>
+    </div>
+</body>
+</html>
